@@ -27,9 +27,6 @@ const recupererFilms = async (page = 1) => {
             if (data.Response === "True") {
                 afficherResultats(data.Search);
                 boutonPlusDeFilms.style.display = "block";
-            } else {
-                divResultats.innerHTML = "<p>Aucun film trouvé</p>";
-                boutonPlusDeFilms.style.display = "none";
             }
         } catch (error) {
             console.error("Erreur lors de la récupération des films:", error);
