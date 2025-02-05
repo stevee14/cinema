@@ -96,3 +96,22 @@ header {
 .plus-de-films:hover {
     background-color: #0056b3;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.footer-content a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}

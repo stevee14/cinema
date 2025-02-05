@@ -3,7 +3,7 @@ const paramsUrl = new URLSearchParams(window.location.search);
 const idFilm = paramsUrl.get('id');
 
 const recupererDetailsFilm = async () => {
-    const url = `https://www.omdbapi.com/?apikey=${cleApi}&i=${idFilm}`;
+    const url = `https://www.omdbapi.com/?apikey=${cleApi}&i=${idFilm}&plot=full`;
     try {
         const reponse = await fetch(url);
         const film = await reponse.json();
@@ -32,3 +32,4 @@ const afficherDetailsFilm = (film) => {
 };
 
 recupererDetailsFilm();
+
